@@ -52,6 +52,7 @@ sudo /home/${USER}/udpbd-server/automount-usb.sh
 # Start services
 sudo /usr/local/bin/clear_usb.sh
 #sudo /home/${USER}/udpbd-server/wifi-to-eth-route.sh
+sudo cat static_ip.txt >> /etc/dhcpcd.conf
 
 # Not a bad idea to reboot
 sudo reboot
