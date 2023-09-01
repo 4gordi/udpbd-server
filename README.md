@@ -1,5 +1,6 @@
 # UDPBD Server
 
+Istallation:
 ```
 cd ~
 git clone https://gitlab.com/ps2max/udpbd-server.git
@@ -9,6 +10,11 @@ chmod a+x udpbd-server
 wget -O setup.sh https://raw.githubusercontent.com/4gordi/udpbd-server/main/setup.sh
 chmod 755 setup.sh
 ./setup.sh
+```
+
+Using:
+```
+udpbd-server /dev/sda1
 ```
 
 By Maximus32
