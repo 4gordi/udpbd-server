@@ -7,3 +7,6 @@ then
     echo "exited to due to presence of USB storage"
     exit
 fi
+
+echo "UDPBD-server is DOWN"
+printf "UDPBD-server is DOWN"
