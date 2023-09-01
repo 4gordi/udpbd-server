@@ -52,7 +52,7 @@ BindsTo=dev-%i.device
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/local/bin/samba-init.sh
+ExecStart=/usr/local/bin/clear_usb.sh
 EOF
 
 # Configure script to run when an automount event is triggered
