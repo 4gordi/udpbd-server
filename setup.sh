@@ -33,9 +33,9 @@ sudo apt-get -y install screen wget git curl coreutils
 
 # Install and configure Samba
 sudo apt-get install -y samba samba-common-bin
-wget https://raw.githubusercontent.com/4gordi/udpbd-server/main/samba-init.sh -O /home/${USER}/samba-init.sh
-chmod 755 /home/${USER}/samba-init.sh
-sudo cp /home/${USER}/samba-init.sh /usr/local/bin
+wget https://raw.githubusercontent.com/4gordi/udpbd-server/main/clear_usb.sh -O /home/${USER}/clear_usb.sh
+chmod 755 /home/${USER}/clear_usb.sh
+sudo cp /home/${USER}/clear_usb.sh /usr/local/bin
 sudo mkdir -m 1777 /share
 
 # Install wifi-to-eth route settings
@@ -50,10 +50,10 @@ sudo /home/${USER}/automount-usb.sh
 
 # Set samba-init + ps3netsrv, wifi-to-eth-route, setup-wifi-access-point, and XLink Kai to run on startup
 # { echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh\n@reboot sudo bash /home/${USER}/wifi-to-eth-route.sh"; } | crontab -u pi -
-{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh"; } | crontab -u pi -
+{ echo -e "@reboot sudo bash /usr/local/bin/clear_usb.sh"; } | crontab -u pi -
 
 # Start services
-sudo /usr/local/bin/samba-init.sh
+sudo /usr/local/bin/clear_usb.sh
 #sudo /home/${USER}/wifi-to-eth-route.sh
 
 # Not a bad idea to reboot
