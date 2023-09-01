@@ -7,6 +7,7 @@ git clone https://github.com/4gordi/udpbd-server.git
 cd udpbd-server
 chmod 755 setup.sh
 ./setup.sh
+cat static_ip.txt >> /etc/dhcpcd.conf
 ```
 
 Using:
