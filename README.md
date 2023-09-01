@@ -3,7 +3,7 @@
 Istallation:
 ```
 cd ~
-git clone https://gitlab.com/ps2max/udpbd-server.git
+git clone https://github.com/4gordi/udpbd-server.git
 cd udpbd-server
 make -f Makefile
 chmod a+x udpbd-server
